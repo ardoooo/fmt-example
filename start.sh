@@ -1,3 +1,5 @@
 #!/bin/bash
 
-./echo 1 2 3 4 "ura"
+current_dir="$(dirname "$(readlink -f "$0")")"
+
+$current_dir/echo $@
